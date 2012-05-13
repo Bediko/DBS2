@@ -14,6 +14,12 @@
 
 using namespace std;
 
+extern PGconn *db;
+extern PGresult *res;
+extern string user,password,host,dbname;
+extern bool deletedb;
+
+
 // Datenbank-Login
 // rc: 0 = ok, 1 = error
 int db_login(const string &user, const string &password, const string &host, const string &dbname);
