@@ -34,6 +34,7 @@ int main(int argc,const char *argv[]){
     arg=argv[i];
     if(arg.compare("-del")==0){
       deletedb=true;
+
     }
     else if(arg.compare("-u")==0){
       user=argv[i+1];
@@ -92,6 +93,7 @@ int main(int argc,const char *argv[]){
     
     if(tupel[0].compare("")==0||tupel[1].compare("")==0||tupel[2].compare("")==0||tupel[3].compare("")==0){
       printf("Import Data incorrect, no undefined fields allowed\n");
+      exit(1);
       
     }
     count++;

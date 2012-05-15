@@ -28,5 +28,5 @@ $(PROGRAM): $(OBJECTS)
 	$(CC) $(CFLAGS) $(CPPFLAGS) -c $*.cpp 	#Compilierregel für benötigte cpp-dateien
 
 clean:
-	rm -f $(PROGRAM) $(OBJECTS)			#Löschen des Programms
+	rm -f $(PROGRAM) $(OBJECTS)			#(make clean) löscht nichtmehr benötigte objectdateien:
 
