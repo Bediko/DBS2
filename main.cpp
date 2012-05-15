@@ -34,7 +34,7 @@ int main(int argc,const char *argv[]){
     arg=argv[i];
     if(arg.compare("-del")==0){
       deletedb=true;
-
+      i--;
     }
     else if(arg.compare("-u")==0){
       user=argv[i+1];
